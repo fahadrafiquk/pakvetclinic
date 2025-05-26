@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pakistan Veterinary Clinic</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Favicon -->
   <link rel="icon" href="WhatsApp Image 2025-05-26 at 11.53.56 AM.jpeg" type="image/jpeg" />
 </head>
 <body>
@@ -14,7 +15,10 @@
       <img src="WhatsApp Image 2025-05-26 at 11.53.56 AM.jpeg" class="logo" alt="Clinic Logo">
       <h1>Pakistan Veterinary Clinic</h1>
       <p class="subtitle">Professional Animal Healthcare in Pākpattan</p>
-      <a href="tel:+923313004050" class="btn call">Call Now: +92 331 3004050</a>
+      <div class="hero-cta">
+        <a href="tel:+923313004050" class="btn call">Call: +92 331 3004050</a>
+        <a href="mailto:contact@pakvetclinic.com" class="btn email">Email Us</a>
+      </div>
       <a href="https://maps.google.com/?cid=15733949134164318637" target="_blank" class="google-badge">
         ★ 4.7 (67 Reviews)
       </a>
@@ -35,8 +39,8 @@
     <!-- About -->
     <section id="overview" class="content-section">
       <h2>About the Clinic</h2>
-      <p>Founded in 2014 by Dr. Muhammad Haris Aziz and later jointly developed by <strong>Dr. Adnan Maqsood</strong>, Pakistan Veterinary Clinic is a trusted center for animal care in Pākpattan.</p>
-      <p>Dr. Adnan, a DVM & MPhil (Clinical Medicine) graduate of UVAS, leads a team providing surgery, diagnostics, and nutritional support across species—from cats and dogs to horses and exotic birds.</p>
+      <p>Founded in 2014 by Dr. Muhammad Haris Aziz and later jointly developed by <strong>Dr. Adnan Maqsood</strong>, Pakistan Veterinary Clinic is the trusted center for animal care in Pākpattan.</p>
+      <p>Dr. Adnan, a DVM &amp; MPhil (Clinical Medicine) graduate of UVAS, leads a team providing surgery, diagnostics, and nutritional support across species—from cats and dogs to horses and exotic birds.</p>
     </section>
 
     <!-- Services -->
@@ -44,11 +48,11 @@
       <h2>Our Services</h2>
       <ul class="services">
         <li>✅ Emergency Treatment</li>
-        <li>✅ Vaccinations & Annual Exams</li>
-        <li>✅ Deworming & Parasite Control</li>
+        <li>✅ Vaccinations &amp; Annual Exams</li>
+        <li>✅ Deworming &amp; Parasite Control</li>
         <li>✅ Reproductive Surgeries (Spay, Neuter, C-Section)</li>
-        <li>✅ Orthopedic & Soft Tissue Surgeries</li>
-        <li>✅ Internal Medicine & Diagnostics</li>
+        <li>✅ Orthopedic &amp; Soft Tissue Surgeries</li>
+        <li>✅ Internal Medicine &amp; Diagnostics</li>
         <li>✅ Exotic Animal Care</li>
         <li>✅ Nutrition Counseling</li>
         <li>✅ Fully Stocked Veterinary Pharmacy</li>
@@ -116,18 +120,15 @@
       <div class="testimonial">
         <p>"Best vet in town! Great surgical skills and clean clinic."</p>
         <span>— Muhammad Omer</span>
-            </div>
+      </div>
+      
     </section>
 
     <!-- Contact -->
     <section id="contact" class="content-section">
       <h2>Contact Us</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <p><strong>Phone:</strong> <a href="tel:+923313004050">+92 331 3004050</a></p>
+      <p><strong>Email:</strong> <a href="mailto:contact@pakvetclinic.com">contact@pakvetclinic.com</a></p>
     </section>
 
     <!-- Location -->
@@ -154,10 +155,11 @@
       const slides = document.getElementsByClassName("slides");
       for (let s of slides) s.style.display = "none";
       slideIndex = (slideIndex % slides.length) + 1;
-      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex-1].style.display = "block";
       setTimeout(showSlides, 4000);
     }
     showSlides();
   </script>
 </body>
 </html>
+
