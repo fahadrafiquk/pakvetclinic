@@ -1,92 +1,118 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #fcfcfc;
+  background: #fafafa;
   color: #333;
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header / Hero */
 .hero {
   background: url('https://images.unsplash.com/photo-1576495199013-1fcb9f3f4f58') center/cover no-repeat;
   color: white;
+  padding: 5rem 1rem;
   text-align: center;
-  padding: 4rem 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: darken;
-  background-color: rgba(0,0,0,0.4);
 }
 
 .hero-text h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .subtitle {
   font-size: 1.2rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
-  color: #e0f7fa;
 }
 
-/* Navigation */
 .topnav {
   background: #028090;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 0.7rem 0;
 }
 
 .topnav a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-.topnav a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content */
 main {
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
   padding: 2rem 1rem;
 }
 
 .content-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .content-section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
   color: #028090;
-}
-
-.services {
-  list-style: none;
-  padding-left: 0;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .services li {
+  list-style: none;
   margin-bottom: 0.5rem;
 }
 
-/* Testimonials */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 48%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
 .testimonial {
-  background: #f0fdfa;
+  background: #f1fdfc;
+  border-left: 4px solid #02c39a;
   padding: 1rem;
-  border-left: 5px solid #02c39a;
   margin-bottom: 1rem;
   font-style: italic;
 }
 
-/* Buttons */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #028090;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #026f6d;
+}
+
+.blog-card {
+  background: #fefefe;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
 .btn {
   display: inline-block;
   padding: 0.7rem 1.4rem;
@@ -110,23 +136,23 @@ main {
   background: #d64545;
 }
 
-/* Footer */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  background: #25D366;
+  color: white;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
 footer {
   background: #eee;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  margin-top: 2rem;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .hero-text h1 {
-    font-size: 1.8rem;
-  }
-
-  .topnav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
 }
