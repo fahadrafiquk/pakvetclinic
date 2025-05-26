@@ -7,62 +7,109 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Hero -->
   <header class="hero">
     <div class="hero-text">
       <h1>Pakistan Veterinary Clinic & Store</h1>
-      <p class="subtitle">Expert Emergency Veterinary Care in Pākpattan</p>
+      <p class="subtitle">Trusted Emergency Veterinary Care in Pākpattan</p>
       <a href="tel:+923313004050" class="btn call">Call Now: +92 331 3004050</a>
     </div>
   </header>
 
+  <!-- Nav -->
   <nav class="topnav">
     <a href="#overview">Overview</a>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
   </nav>
 
   <main>
+    <!-- Overview -->
     <section id="overview" class="content-section">
       <h2>About Us</h2>
-      <p>With a 4.7★ rating from over 67 reviews, Pakistan Veterinary Clinic & Store is trusted by pet lovers across Pākpattan. We offer professional care, emergency services, and essential pet supplies in a clean, modern facility.</p>
-      <p><strong>Location:</strong> Hota Rd, near Sadar Police Station, Pākpattan, 57400</p>
-      <p><strong>Hours:</strong> Open daily, Closes at 9 PM</p>
+      <p>Rated 4.7★ by over 67 happy pet owners, Pakistan Veterinary Clinic provides professional care, pet medicine, and emergency treatment. Conveniently located at Hota Rd, near Sadar Police Station, Pākpattan.</p>
+      <p><strong>Hours:</strong> Daily · Closes 9 PM</p>
     </section>
 
+    <!-- Services -->
     <section id="services" class="content-section">
       <h2>Our Services</h2>
       <ul class="services">
-        <li>✅ Emergency Care</li>
-        <li>✅ Vaccinations & Checkups</li>
-        <li>✅ Surgery & Wound Treatment</li>
-        <li>✅ Deworming & Parasite Control</li>
-        <li>✅ Pet Food & Medicines</li>
+        <li>✅ Emergency Treatment</li>
+        <li>✅ Vaccinations & Annual Exams</li>
+        <li>✅ Pet Surgery & Wound Care</li>
+        <li>✅ Nutrition & Supplements</li>
+        <li>✅ Pet Accessories & Food Store</li>
       </ul>
     </section>
 
-    <section id="testimonials" class="content-section">
-      <h2>What Pet Owners Say</h2>
-      <div class="testimonial">
-        <p>“Dr. Adnan is highly professional and caring. The best vet in town!”</p>
-        <span>— A. Malik</span>
-      </div>
-      <div class="testimonial">
-        <p>“Clean environment and all medicine available. 100% recommended.”</p>
-        <span>— M. Iqbal</span>
+    <!-- Gallery -->
+    <section id="gallery" class="content-section">
+      <h2>Photo Gallery</h2>
+      <div class="gallery">
+        <img src="https://placekitten.com/300/200" alt="Pet 1">
+        <img src="https://place-puppy.com/300x200" alt="Pet 2">
+        <img src="https://placebear.com/300/200" alt="Pet 3">
+        <img src="https://placekitten.com/301/201" alt="Pet 4">
       </div>
     </section>
 
+    <!-- Testimonials -->
+    <section id="testimonials" class="content-section">
+      <h2>What Clients Say</h2>
+      <div class="testimonial">
+        <p>"Excellent service and clean space. Best vet experience!"</p>
+        <span>— Sarah K.</span>
+      </div>
+      <div class="testimonial">
+        <p>"Highly knowledgeable and friendly. Affordable too."</p>
+        <span>— Rizwan M.</span>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
     <section id="contact" class="content-section">
-      <h2>Find Us</h2>
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Blog Preview -->
+    <section id="blog" class="content-section">
+      <h2>Pet Care Tips</h2>
+      <div class="blog-card">
+        <h3>How to Keep Pets Cool in Summer</h3>
+        <p>Learn key tips for protecting your furry friends from heatstroke.</p>
+      </div>
+      <div class="blog-card">
+        <h3>Why Deworming is Important</h3>
+        <p>A short guide to understanding parasite prevention for all animals.</p>
+      </div>
+    </section>
+
+    <!-- Google Maps -->
+    <section class="content-section">
+      <h2>Find Us on the Map</h2>
       <iframe
         src="https://maps.google.com/maps?q=Pakistan%20Veterinary%20Clinic%20Pākpattan&t=&z=15&ie=UTF8&iwloc=&output=embed"
         width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
     </section>
   </main>
 
+  <!-- WhatsApp Chat -->
+  <a class="whatsapp" href="https://wa.me/923313004050" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Pakistan Veterinary Clinic & Store</p>
   </footer>
 </body>
 </html>
+
