@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fcfcfc;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header / Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1576495199013-1fcb9f3f4f58') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  background-blend-mode: darken;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #e0f7fa;
+}
+
+/* Navigation */
+.topnav {
+  background: #028090;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.topnav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #028090;
+}
+
+.services {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services li {
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials */
+.testimonial {
+  background: #f0fdfa;
+  padding: 1rem;
+  border-left: 5px solid #02c39a;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background: #02c39a;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #028090;
+}
+
+.call {
+  background: #ff6b6b;
+}
+
+.call:hover {
+  background: #d64545;
+}
+
+/* Footer */
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .topnav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
