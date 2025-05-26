@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pakistan Veterinary Clinic</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Favicon: tiny logo for browser tab -->
   <link rel="icon" href="WhatsApp Image 2025-05-26 at 11.53.56 AM.jpeg" type="image/jpeg" />
 </head>
 <body>
@@ -16,8 +15,6 @@
       <h1>Pakistan Veterinary Clinic</h1>
       <p class="subtitle">Professional Animal Healthcare in Pākpattan</p>
       <a href="tel:+923313004050" class="btn call">Call Now: +92 331 3004050</a>
-
-      <!-- Google Reviews badge -->
       <a href="https://maps.google.com/?cid=15733949134164318637" target="_blank" class="google-badge">
         ★ 4.7 (67 Reviews)
       </a>
@@ -29,7 +26,6 @@
     <a href="#overview">About</a>
     <a href="#services">Services</a>
     <a href="#gallery">Gallery</a>
-    <a href="#google-reviews">Reviews</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact</a>
     <a href="#location">Location</a>
@@ -40,7 +36,7 @@
     <section id="overview" class="content-section">
       <h2>About the Clinic</h2>
       <p>Founded in 2014 by Dr. Muhammad Haris Aziz and later jointly developed by <strong>Dr. Adnan Maqsood</strong>, Pakistan Veterinary Clinic is a trusted center for animal care in Pākpattan.</p>
-      <p>Dr. Adnan, a DVM & MPhil (Clinical Medicine) graduate of UVAS, leads a team providing surgery, diagnostics, and nutritional support across species — from cats and dogs to horses and exotic birds.</p>
+      <p>Dr. Adnan, a DVM & MPhil (Clinical Medicine) graduate of UVAS, leads a team providing surgery, diagnostics, and nutritional support across species—from cats and dogs to horses and exotic birds.</p>
     </section>
 
     <!-- Services -->
@@ -110,17 +106,6 @@
       </div>
     </section>
 
-    <!-- Embedded Google Reviews -->
-    <section id="google-reviews" class="content-section">
-      <h2>Live Google Reviews</h2>
-      <div class="map-embed">
-        <iframe
-          src="https://www.google.com/maps/embed?cid=15733949134164318637"
-          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
-    </section>
-
     <!-- Testimonials -->
     <section id="testimonials" class="content-section">
       <h2>Client Testimonials</h2>
@@ -133,7 +118,7 @@
         <span>— Muhammad Omer</span>
       </div>
       <div class="testimonial critical">
-        <p>⚠️ Some feedback raised concerns— we hear you and are continually improving our care and communication.</p>
+        <p>⚠️ Some feedback raised concerns— we hear you and continually improve our care and communication.</p>
         <span>— Community Feedback Summary</span>
       </div>
     </section>
@@ -173,7 +158,7 @@
       const slides = document.getElementsByClassName("slides");
       for (let s of slides) s.style.display = "none";
       slideIndex = (slideIndex % slides.length) + 1;
-      slides[slideIndex-1].style.display = "block";
+      slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 4000);
     }
     showSlides();
